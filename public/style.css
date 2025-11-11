@@ -1,0 +1,50 @@
+body, html {
+    /* Ensure the body and html take up the full viewport height */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.ep--arrow-down-bold {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23000' d='M104.704 338.752a64 64 0 0 1 90.496 0l316.8 316.8l316.8-316.8a64 64 0 0 1 90.496 90.496L557.248 791.296a64 64 0 0 1-90.496 0L104.704 429.248a64 64 0 0 1 0-90.496'/%3E%3C/svg%3E");
+}
+
+.cil--arrow-right {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23fff' d='m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z'/%3E%3C/svg%3E");
+}
+
+.bold-fake {
+  font-weight: bold;
+  text-shadow:
+    -0.3px 0 black,
+    0 0.3px black,
+    0.3px 0 black,
+    0 -0.3px black;
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-animate {
+  animation: fadeSlideDown 0.25s ease forwards;
+}
+

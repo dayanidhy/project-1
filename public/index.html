@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PersonaGen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/fonts.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body class="bg-transparent">
+  <!-- Includes will load here -->
+  <div id="navbar"></div>
+  <div id="hero"></div>
+  <div id="footer"></div>
+
+  <!-- Load the include script -->
+  <script src="include.js"></script>
+  <script>
+    includeHTML("navbar", "partials/navbar.html");
+    includeHTML("hero", "partials/hero.html");
+    includeHTML("footer", "partials/footer.html");
+  </script>
+</body>
+</html>

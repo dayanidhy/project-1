@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/fonts/Coolvetica/Coolvetica Rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/fonts/Coolvetica/Coolvetica Rg It.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
